@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .landing_pg_1{
+        height: 49em;
+        padding-top: .2em;
+        margin: 0em 0em 0em 0em;
+        background: rgb(142,221,237);
+        background: linear-gradient(90deg, rgba(142,221,237,1) 19%, rgba(241,231,116,1) 50%, rgba(176,172,255,1) 80%);
+    }
+    nav{
+    	position: fixed;
+    	left: 35%;
+        top: 20px;
+    	width: 430px;
+    	height: 50px;
+    	background: #939699a1;
+    	border-radius: 8px;
+    	font-size: 0;
+    	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    }
+    nav a{
+        font-size: 15px;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 50px;
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        text-align: center;
+    }
+    nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #8b999685;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+    nav a:nth-child(1){
+    	width: 100px;
+    }
+    nav .start-home, a:nth-child(1):hover~.animation{
+	    width: 100px;
+	    left: 0;
+    }
+    nav a:nth-child(2){
+    	width: 110px;
+    }
+    nav a:nth-child(2):hover~.animation{
+	    width: 110px;
+    	left: 100px;
+    }
+    nav a:nth-child(3){
+    	width: 100px;
+    }
+    nav a:nth-child(3):hover~.animation{
+	    width: 100px;
+	    left: 210px;
+    }
+    nav a:nth-child(4){
+	    width: 120px;
+    }
+    nav a:nth-child(4):hover~.animation{
+	    width: 120px;
+	    left: 310px;
+    }
+    h2{
+        margin-top: 1.5em;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 4em;
+        letter-spacing: .4em;
+        color: rgb(253, 252, 158);
+        animation: mymove 3s infinite;
+        padding: 30px 0px 30px 30px;
+    }
+    @keyframes mymove {
+        50% {box-shadow: 10px 20px 30px rgba(8, 0, 0, 0.267);}
+    }
+    .main p{
+        margin-top: 4em;
+        margin-left: 2em;
+        font-size: 2.5em;
+        font-family: monospace;
+        text-align:justify;
+        border-radius: 1em;
+        padding: 40px 40px 40px 40px;
+        width: 60%;
+        box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -moz-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+    }
+    
+    .landing_pg_2{
+        height: 39em;
+        padding-top: 1em;
+        background-color: white;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 4em;
+        letter-spacing: .3ex;
+        margin-left: 1em;
+    }
+    .project1{
+        display: flex;
+    }
+    .project1 img{
+        width: 20em;
+        margin: 0em 0em 0em 4em;
+        border-radius: 2em;
+        width: 20em;
+        box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -moz-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+    }
+    .project1 img:hover {
+        box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+        -moz-box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+    }
+    .project2{
+        display: flex;
+    }
+    .project2 img{
+        width: 20em;
+        margin: 2em 0em 0em 4em;
+        border-radius: 2em;
+        box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+        -moz-box-shadow: 49px 42px 46px -7px rgba(0,0,0,0.49);
+    }
+    .project2 img:hover {
+        box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+        -moz-box-shadow: 32px 30px 23px -24px rgba(0,0,0,0.49);
+    }
+    .landing_pg_3{
+        height: 48em;
+        background-color: white;
+        padding-bottom: 18em;
+    }
+    h4{
+        font-family: 'Roboto', sans-serif;
+        font-size: 3em;
+        letter-spacing: .3ex;
+        margin-left: 1em;
+        margin-top: 2.5em;
+        padding-top: 2em;
+    }
+    .about_p1 h1{
+        font-size: 3em;
+        text-align: left;
+        margin-left: 1em;
+        font-family: monospace;
+        letter-spacing: .1em;
+    }
+    .about_p1 p{
+        font-family: monospace;
+        margin-left: 3.4em;
+        font-size: 1.6em;
+        width: 45%;
+    }
+    .frontend{
+        display: flex;
+    }
+    .programmer{
+        display: flex;
+    }
+    .programmer p{
+        margin-left: 3.4em;
+        margin-right: 5em;
+        font-size: 1.6em;
+        width: 45%;
+    }
+    .programmer img{
+        width: 23em;
+        height: 20em;
+    }
+    .landing_pg_4{
+        height: 42em;
+        background-color: white;
+    }
+    .contact_p p{
+        font-size: 2.5em;
+        font-family: monospace;
+        letter-spacing: .1em;
+        margin-left: 2.5em;
+        width: 85%;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        border-radius: 47%;
+        text-align: center;
+        text-decoration: none;
+        margin: 1em;
+    }
+    .fa:hover {
+    opacity: 0.7;
+    }
+    .fa-envelope {
+        margin-top: 2em;
+        margin-left: 12em;
+        background: #007bb5;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+    .contact_no p{
+        font-size: 2em;
+        font-family: monospace;
+        letter-spacing: .1em;
+        margin-top: 2em;
+        margin-left: 2.5em;
+    }
+    footer{
+        padding-top: 4em;
+        padding-left: 15em;
+        background-color: black;
+        color: white;
+    }
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit</title>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div class="animation start-home"></div>
+      </nav>
+    <!--
+    <div>
+        <ul>
+            <li><a class="#active" href="#">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li style="float:right"><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+    -->
+    <div class="landing_pg_1">
+    <h2>Rohit More</h2>
+        <div class="main">
+            <p>Hello, this is ROHIT MORE.<br>This is my first Web Devlopment poject and is devloped using HTML and CSS. i.e. This is only a front-end website.</p>
+        </div>
+    </div>
+    <div id="projects" class="landing_pg_2">
+    <h3>PROJECTS</h3>
+            <div class="project">
+                <div class="project1">
+                    <a href="https://bit.ly/3baRFFy" target="__blank"><img src="palette.webp" alt="Project-1"></a>
+                    <a href="https://bit.ly/3rdpuvj" target="__blank"><img src="color_ramp" alt="Project-2"></a>
+                    <a href="https://fastlane.tools/" target="__blank"><img src="fastlane.png" alt="Project-3"></a>
+                </div>
+                <div class="project2">
+                    <a href="https://olivia-ai.org/" target="__blank"><img src="olivia.png" alt="Project-4" height="70%"></a>
+                    <a href="http://www.pidramble.com/" target="__blank"><img src="rpi_dramble.png" alt="Project-5"></a>
+                </div>
+            </div>
+    </div>
+    <br>
+    <div id="about" class="landing_pg_3">
+    <h4>ABOUT ME</h4>
+        <div class="about_p1">
+            <p>I’m a student, front-end web devloper, programmer.</p>
+            <h1>Student</h1>
+            <p>I'm a second year student completing my Computer Engineering  course. At Modern Education Society's College Of Engineering.</p>
+            <h1>Front-end Devloper</h1>
+            <div class="frontend">
+                <p>I have recently started learning Web Devlopment and started to work on this project and I think this will be further more upgraded. This is a start of my work as a web devloper and is also for a competition.</p>
+                <img src="htmlcssjs.png" alt="HTML CSS JS">
+            </div>
+            <h1>Programmer</h1>
+            <div class="programmer">
+                <p>I also know the the programming languages like C, C++, Java, Python.</p>
+                <img src="languages.png" alt="Languages">
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="landing_pg_4">
+    <h4>CONTACT</h4>
+        <div class="contact_p">
+            <p>For any suggestions, details or wan't to know references feel free to contact.</p>
+            <a href="mailto:rohitmore386@gmail.com" class="fa fa-envelope" target="__blank"></a>
+            <a href="https://www.instagram.com/r0hit_m0re/" class="fa fa-instagram" target="__blank"></a>
+            <a href="https://www.facebook.com/profile.php?id=100059750222203" class="fa fa-facebook" target="__blank"></a>
+            <a href="https://twitter.com/r0hit_m0re?s=08" class="fa fa-twitter" target="__blank"></a>
+            <a href="https://www.linkedin.com/in/rohit-more-25bb79206" class="fa fa-linkedin" target="__blank"></a>
+        </div>
+        <div class="contact_no">
+            <p>Contact No.:- 7083072824</p>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2021 Rohit More. All rights Reserved.
+    </footer>
+</body>
+</html>
